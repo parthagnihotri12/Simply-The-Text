@@ -4,16 +4,11 @@ import tailwindcss from 'tailwindcss';
 import autoprefixer from 'autoprefixer';
 
 export default defineConfig({
-  base: './', // 🔥 Add this line here
-  plugins: [
-    react(),
-  ],
+  base: './', // ✅ THIS IS IMPORTANT
+  plugins: [react()],
   css: {
     postcss: {
-      plugins: [
-        tailwindcss,
-        autoprefixer,
-      ],
+      plugins: [tailwindcss, autoprefixer],
     },
   },
 });
